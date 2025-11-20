@@ -1,0 +1,40 @@
+<ion-content class="ion-padding">
+  <h1>Criar Conta</h1>
+
+  <ion-item>
+    <ion-input
+      label="Nome"
+      labelPlacement="floating"
+      [(ngModel)]="name">
+    </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input
+      label="Email"
+      labelPlacement="floating"
+      type="email"
+      [(ngModel)]="email">
+    </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input
+      label="Senha"
+      labelPlacement="floating"
+      type="password"
+      [(ngModel)]="password">
+    </ion-input>
+  </ion-item>
+
+  <ion-button expand="block" (click)="register()">
+    Cadastrar
+  </ion-button>
+
+  <ion-button
+    fill="clear"
+    expand="block"
+    routerLink="/login">
+    Já tenho conta
+  </ion-button>
+</ion-content>
